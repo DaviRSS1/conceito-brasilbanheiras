@@ -1,0 +1,12 @@
+.promocoes {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+}
+
+.promocoes img {
+  width: 300px;
+  height: auto;
+  scroll-snap-align: center;
+}

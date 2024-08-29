@@ -1,0 +1,27 @@
+.banners {
+  text-align: center;
+  position: relative;
+  background: linear-gradient(to bottom, #115f31 0%, #115f31 50%, #f6f6f6 100%);
+}
+
+.banners img {
+  width: 96%;
+  aspect-ratio: 164 / 75;
+  border-radius: 0.5rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.arrowLeft {
+  left: -2px;
+}
+
+.arrowRight {
+  right: -2px;
+}

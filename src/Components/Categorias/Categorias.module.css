@@ -1,0 +1,21 @@
+.categorias li img {
+  width: 5rem;
+  border-radius: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.categorias li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categorias li p {
+  font-size: 1rem;
+}
+
+.categorias {
+  display: flex;
+  justify-content: space-around;
+}
