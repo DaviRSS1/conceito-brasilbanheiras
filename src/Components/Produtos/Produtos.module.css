@@ -1,0 +1,88 @@
+.produtosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.produtosContainer div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.produtosContainer h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  align-items: center;
+  min-width: 38vw;
+  scroll-snap-align: start;
+  justify-content: center;
+}
+
+.produtos h3 {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  max-height: 4.8em;
+  font-size: 14px;
+  text-align: center;
+}
+
+.produtos h4 {
+  text-decoration: underline;
+}
+
+.produtos img {
+  width: 100%;
+}
+
+.preco {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.precoCortado {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.desconto {
+  background-color: #115f31;
+  text-align: center;
+  gap: 1px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2px 8px;
+  border-radius: 20px;
+  display: inline-flex;
+  color: #fff;
+  width: auto;
+}
+
+.parcelas {
+  font-size: 12px;
+  text-align: center;
+}
+
+.parcelas p strong {
+  font-weight: 600;
+}

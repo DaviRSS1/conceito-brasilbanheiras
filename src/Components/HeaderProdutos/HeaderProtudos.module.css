@@ -1,0 +1,68 @@
+.headerContainer {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #115f31 transparent;
+}
+
+.headerContainer::-webkit-scrollbar {
+  width: 1px;
+  height: 2px;
+}
+
+.headerContainer::-webkit-scrollbar-thumb {
+  background-color: #115f31;
+  border-radius: 10px;
+}
+
+.headerContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.headerCaminho {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 5px 0;
+}
+
+.estrelas {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+}
+.estrelas div {
+  color: #115f31;
+  font-size: 0.9rem;
+}
+
+.estrelas p {
+  font-size: 0.7rem;
+}
+
+.titulo {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  align-items: center;
+}
+
+.subHeader p {
+  font-size: 0.7rem;
+}
+
+.foto img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.foto {
+  text-align: center;
+}

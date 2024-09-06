@@ -1,0 +1,180 @@
+.opinioesContainer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d4d2d2;
+  border-bottom: 1px solid #d4d2d2;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.ratingContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.averageRating {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.averageText {
+  font-size: 36px;
+  font-weight: bold;
+  color: #115f31;
+  margin-right: 10px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.star {
+  color: #115f31;
+  margin-right: 2px;
+}
+
+.reviewCount {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #888;
+}
+
+.breakdown {
+  margin-bottom: 10px;
+}
+
+.breakdownRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.bar {
+  flex: 1;
+  height: 5px;
+  width: 70%;
+  background-color: #ddd;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.characteristics {
+  margin-bottom: 10px;
+}
+
+.characteristic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.moreLink {
+  color: #115f31;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+}
+
+.bar::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    to right,
+    #115f31 0%,
+    #115f31 calc(var(--value) * 20%),
+    #ddd calc(var(--value) * 20%),
+    #ddd 100%
+  );
+  height: 8px;
+  border-radius: 5px;
+}
+
+.bar::-moz-range-track {
+  background: linear-gradient(
+    to right,
+    #115f31 0%,
+    #115f31 calc(var(--value) * 20%),
+    #ddd calc(var(--value) * 20%),
+    #ddd 100%
+  );
+  height: 8px;
+  border-radius: 5px;
+}
+
+.bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.bar::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.breakdownRow div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.opinioes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.headerOpinioes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerOpinioes p {
+  font-size: 0.8rem;
+}
+
+.opiniao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opiniao h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.opiniao div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opiniao img {
+  width: 20% !important;
+  border-radius: 10px;
+}
+
+.opinioess {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

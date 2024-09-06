@@ -108,10 +108,17 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: #d0d2d3 1px solid;
 }
 
 .aberto {
   display: flex;
   flex-direction: column;
+  border-bottom: #d0d2d3 1px solid;
+}
+
+.aberto ul li {
+  display: flex;
+  padding: 1rem 1rem 1rem 2rem;
+  justify-content: space-between;
+  border-bottom: none !important;
 }

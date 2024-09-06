@@ -1,17 +1,17 @@
-import Categorias from "../Categorias";
-import Certificados from "../Certificados";
+import Categorias from "../../Components/Categorias";
+import Certificados from "../../Components/Certificados";
 import React from "react";
 import styles from "./PaginaInicial.module.css";
-import Card from "../Card";
-import Whatsapp from "../Whatsapp";
-import Banner from "../Banner";
-import Promocoes from "../Promocoes";
+import Card from "../../Components/Card";
+import Whatsapp from "../../Components/Whatsapp";
+import Banner from "../../Components/Banner";
+import Promocoes from "../../Components/Promocoes";
 
 function PaginaInicial() {
   return (
     <>
       <Banner />
-      <body className={styles.body}>
+      <div className={styles.body}>
         <Certificados />
         <Categorias />
         <Card>Mais vendidos</Card>
@@ -19,7 +19,7 @@ function PaginaInicial() {
         <Card>Frete promocional</Card>
         <Whatsapp />
         <Card>Outlet</Card>
-      </body>
+      </div>
     </>
   );
 }

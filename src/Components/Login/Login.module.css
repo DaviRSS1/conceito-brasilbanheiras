@@ -1,0 +1,127 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login h1 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #d4d2d2;
+}
+
+.radio input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d4d2d2;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio input[type="radio"]:checked {
+  border-color: #115f31;
+}
+
+.radio input[type="radio"]:checked::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #115f31;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d4d2d2;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio input[type="checkbox"]:checked {
+  border-color: #115f31;
+  background-color: #115f31;
+}
+
+.radio input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputs div label {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.inputs div input[type="text"],
+.inputs div input[type="password"] {
+  padding: 1rem;
+  border: 1px solid #d4d2d2;
+  border-radius: 10px;
+}
+
+.inputs div input:focus {
+  border: 1px solid #115f31 !important;
+  outline: none;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row !important;
+  gap: 1rem;
+}
+
+.comprar {
+  background-color: #115f31;
+  color: #eaf8f0;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.comprar:active {
+  background-color: #0d4b27;
+}
+
+.termos {
+  font-size: 0.8rem;
+}
+
+.termos span {
+  color: #115f31;
+  text-decoration: underline;
+}

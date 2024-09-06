@@ -144,3 +144,8 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+
+nav a,
+.App a {
+  text-decoration: none;
+}

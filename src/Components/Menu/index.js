@@ -5,8 +5,14 @@ import { MdHome } from "react-icons/md";
 import { IoIosArrowForward, IoIosArrowDown, IoMdClose } from "react-icons/io";
 import { IoHelp } from "react-icons/io5";
 import { IoMdHappy } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Menu({ isOpen, toggleMenu }) {
+  // Função para fechar o menu ao clicar em um Link
+  const handleLinkClick = () => {
+    toggleMenu(); // Fechar o menu
+  };
+
   return (
     <>
       <div
@@ -25,18 +31,22 @@ function Menu({ isOpen, toggleMenu }) {
           </div>
         </div>
         <ul className={styles.menuLinks}>
-          <li>
-            <p>Página Inicial</p> <MdHome />
-          </li>
+          <Link to={"/"} onClick={handleLinkClick}>
+            <li>
+              <p>Página Inicial</p> <MdHome />
+            </li>
+          </Link>
           <div className={styles.aberto}>
-            <div>
-              <p>Mais Vendidos</p> <IoIosArrowForward />
-            </div>
-            <ul>
-              <li>Banheiras</li>
-              <li>Spas</li>
-              <li>Ofuros</li>
-            </ul>
+            <Link to={"/categorias"} onClick={handleLinkClick}>
+              <div>
+                <p>Mais Vendidos</p> <IoIosArrowForward />
+              </div>
+              <ul>
+                <li>Banheiras</li>
+                <li>Spas</li>
+                <li>Ofuros</li>
+              </ul>
+            </Link>
           </div>
           <li>
             <p>Banheiras</p> <IoIosArrowDown />

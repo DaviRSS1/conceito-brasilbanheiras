@@ -6,6 +6,7 @@ import { FaUser } from "react-icons/fa6";
 import { BsCart2 } from "react-icons/bs";
 import { IoIosSearch } from "react-icons/io";
 import Menu from "../Menu";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +21,13 @@ function Header() {
       <header className={styles.header}>
         <div className={styles.headerLogos}>
           <FiAlignJustify color="white" size={"1.5rem"} onClick={toggleMenu} />
-          <img src={LogoMobile} alt="logo mobile branca" />
+          <Link to={"/"}>
+            <img src={LogoMobile} alt="logo mobile branca" />
+          </Link>
           <div>
-            <FaUser color="white" size={"1.2rem"} />
+            <Link to={"/login"}>
+              <FaUser color="white" size={"1.2rem"} className={styles.user}/>
+            </Link>
             <BsCart2 color="white" size={"1.3rem"} />
           </div>
         </div>
