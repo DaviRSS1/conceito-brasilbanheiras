@@ -10,18 +10,17 @@
   border-radius: 0.5rem;
 }
 
-.arrow {
+.dots {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color: #ffffff;
+  color: #fff;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
 }
 
-.arrowLeft {
-  left: -2px;
-}
-
-.arrowRight {
-  right: -2px;
+.dots svg {
+  width: 20px;
+  height: 20px;
 }
